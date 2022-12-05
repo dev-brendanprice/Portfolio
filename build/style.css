@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.canvas {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to top, navy, black);
+}
+
+#projectsContainer {
+    position: fixed;
+    display: none;
+}
+
+#mainContainer {
+    flex: 1;
+}
+
+.flake {
+    opacity: 0.5;
+}
+
+#santaHat {
+    display: none;
+    position: absolute;
+    margin: auto;
+    width: 110px;
+    top: 140px;
+    left: -80px;
+    right: 0;
+    -webkit-transform: scaleX(-1) rotate(15deg);
+    transform: scaleX(-1) rotate(15deg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#pictureContainer {
+    margin: auto;
+    margin-top: 200px;
+    width: fit-content;
+}
+
+#picture {
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid rgb(196, 226, 255);
+    box-shadow: 0px 0px 50px rgb(196, 226, 255);
+    /* cursor: pointer; */
+}
+
+#pictureTextPopupContainer {
+    display: block;
+    position: absolute;
+    margin: auto;
+    margin-top: 20px;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#iconsContainer {
+    display: flex;
+    margin: auto;
+    margin-top: 55px;
+    width: fit-content;
+    gap: 10px;
+}
+
+.icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.075);
+    animation: iconHoverAnimation 3s ease-in-out infinite;
+}
+
+#linksContainer {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: fit-content;
+    text-align: center;
+}
+
+.link {
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.link:hover {
+    background: #6666ff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@keyframes iconHoverAnimation {
+    0%, 100% {
+        filter: drop-shadow(0px 0px 20px rgb(196, 226, 255));
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 10px rgb(196, 226, 255));
+    }
+}
+
+@keyframes textHoverAnimation {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
