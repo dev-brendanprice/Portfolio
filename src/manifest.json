@@ -6,20 +6,7 @@
     "icons": [
         {
             "src": "media/pfp.png",
-            "sizes": "48x48",
-            "type": "image/webp"
-        },
-        {
-            "src": "media/pfp.png",
-            "sizes": "48x48"
-        },
-        {
-            "src": "media/pfp.png",
-            "sizes": "72x72 96x96 128x128 256x256"
-        },
-        {
-            "src": "media/pfp.png",
-            "sizes": "any"
+            "purpose": "any"
         }
     ],
     "theme_color": "#000000",
