@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/mona-sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
@@ -15,29 +16,75 @@
 
     <div class="canvas">
     
-        <div id="mainContainer">
-    
-            <img id="santaHat" src="media/santa-hat.png">
-            <div id="pictureContainer">
-                <img id="picture" src="media/pfp.png"> 
-            </div>
-    
-            <div id="pictureTextPopupContainer">Brendan Price | CS Student</div>
+        <div id="mainCon">
+
+            <div class="infoCon">
+
+                <div class="titleCon">
+                    <div class="title">Front-End Developer 👋</div>
+                    <div>Brendan Price | BsC Student</div>
+
+                    <div class="titleDescriptor"><span style="color: #ffffffb3;">Front-end developer based in London, UK </span>📍</div>
+
+                    <div id="iconsContainer">
+                        <a href="https://twitter.com/_devbrendan" target="_blank"><img class="icon" src="media/twitter.svg"></a>
+                        <a href="https://www.linkedin.com/in/brendan-price-1abb28204/" target="_blank"><img class="icon" src="media/linked.svg"></a>
+                        <a href="https://github.com/brendanprice2003" target="_blank"><img class="icon" src="media/github.svg"></a>
+                    </div>
+                </div>
         
-            <div id="iconsContainer">
-                <a href="https://twitter.com/_devbrendan" target="_blank"><img class="icon" src="media/twitter.svg"></a>
-                <a href="https://www.linkedin.com/in/brendan-price-1abb28204/" target="_blank"><img class="icon" src="media/linked.svg"></a>
-                <a href="https://github.com/brendanprice2003" target="_blank"><img class="icon" src="media/github.svg"></a>
+                <div>
+                    <div class="pfpCon">
+                        <img id="santaHat" src="media/santa-hat.png">
+                        <div id="pictureCon">
+                            <img id="picture" src="media/pfp.png"> 
+                        </div>
+                    </div>
+                </div>
             </div>
-        
-            <!-- <div id="linksContainer">
-                <a id="projects"><div class="link">< Projects /></div></a>
-                <a id="about"><div class="link">< About Me /></div></a>
-            </div> -->
+
         </div>
 
-        <div id="projectsContainer">
-            bruh
+        <div class="fubarCon">
+
+            <div class="fubar">
+                <h3>Projects</h3>
+                <img class="fubarIcon" src="./media/gitbranch.svg">
+            </div>
+
+            <div class="fubarRing"></div>
+            <div class="fubarLine"></div>
+            <div class="fubarRing"></div>
+
+            <div class="fubar">
+                <h3>GitHub</h3>
+                <img class="fubarIcon" src="./media/github.svg">
+            </div>
+
+            <div class="fubarVertRing"></div>
+            <div class="fubarVertLine"></div>
+
+        </div>
+
+        <div class="fubarCon" style="left: 0;margin-left: 100px;">
+
+            <div class="fubar">
+                <h3>Website</h3>
+                <img class="fubarIcon" src="./media/website.svg">
+            </div>
+
+            <div class="fubarRing" style="margin-left: 325px;"></div>
+            <div class="fubarLine" style="margin-left: 331px;"></div>
+            <div class="fubarRing" style="margin-left: 325px;"></div>
+
+            <div class="fubar">
+                <h3>Cloudflare</h3>
+                <img class="fubarIcon" src="./media/cloudflare.svg">
+            </div>
+
+            <div class="fubarVertRing" style="margin-left: 350px;"></div>
+            <div class="fubarVertLine" style="margin-left: 363px;background-image: linear-gradient(to left, rgba(255,0,0,0), #b5b5b5);"></div>
+        
         </div>
 
     </div>
