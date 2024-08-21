@@ -19,12 +19,7 @@ a {
     background: linear-gradient(to top, navy, black);
 }
 
-#projectsContainer {
-    position: fixed;
-    display: none;
-}
-
-#mainContainer {
+#mainCon {
     flex: 1;
 }
 
@@ -32,14 +27,39 @@ a {
     opacity: 0.5;
 }
 
+.infoCon {
+    display: flex;
+    margin: auto;
+    margin-top: 200px;
+    width: fit-content;
+}
+
+.titleCon {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.titleDescriptor {
+    margin-top: 20px;
+    color: white;
+}
+
 #santaHat {
     display: none;
     position: absolute;
     margin: auto;
+    margin-top: -60px;
+    margin-left: -30px;
     width: 110px;
-    top: 140px;
-    left: -80px;
-    right: 0;
     -webkit-transform: scaleX(-1) rotate(15deg);
     transform: scaleX(-1) rotate(15deg);
     justify-content: center;
@@ -47,9 +67,13 @@ a {
     text-align: center;
 }
 
-#pictureContainer {
+.pfpCon {
+    margin-top: -10px;
+    margin-left: 50px;
+}
+
+#pictureCon {
     margin: auto;
-    margin-top: 200px;
     width: fit-content;
 }
 
@@ -58,32 +82,16 @@ a {
     border-radius: 50%;
     border: 1px solid rgb(196, 226, 255);
     box-shadow: 0px 0px 50px rgb(196, 226, 255);
-    /* cursor: pointer; */
-}
-
-#pictureTextPopupContainer {
-    display: block;
-    position: absolute;
-    margin: auto;
-    margin-top: 20px;
-    width: fit-content;
-    left: 0;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 #iconsContainer {
     display: flex;
-    margin: auto;
-    margin-top: 55px;
-    width: fit-content;
+    margin-top: 10px;
     gap: 10px;
 }
 
 .icon {
-    width: 40px;
+    width: 32px;
     cursor: pointer;
 }
 
@@ -92,24 +100,84 @@ a {
     animation: iconHoverAnimation 3s ease-in-out infinite;
 }
 
-#linksContainer {
-    display: block;
-    margin: auto;
-    margin-top: 40px;
-    width: fit-content;
-    text-align: center;
+.fubarCon {
+    position: absolute;
+    right: 0;
+    margin-top: 450px;
+    margin-right: 100px;
+    filter: blur(1px);
 }
 
-.link {
-    margin-top: 8px;
-    cursor: pointer;
+.fubar {
+    display: flex;
+    width: 300px;
+    background-color: #1d222a;
+    border-radius: 10px;
+    border: 1px solid #ffffff2b;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 0px 50px rgb(55, 55, 55);
+    justify-content: space-between;
+    animation: float 6s ease-in-out infinite;
 }
 
-.link:hover {
-    background: #6666ff;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+.fubarIcon {
+    width: 28px;
+    opacity: 70%;
+    right: 0;
+}
+
+.fubarRing {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #73e853;
+    border-radius: 50%;
+    animation: float2 6s ease-in-out infinite;
+}
+
+.fubarVertRing {
+    margin-top: -38px;
+    margin-left: -25px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #73e853;
+    border-radius: 50%;
+    animation: float2 6s ease-in-out infinite;
+}
+
+.fubarLine {
+    margin-top: -11px;
+    margin-left: 6px;
+    margin-bottom: -12px;
+    border: 1px solid #b5b5b5;
+    border-radius: 10px;
+    width: 0px;
+    height: 150px;
+    animation: float2 6s ease-in-out infinite;
+}
+
+.fubarVertLine {
+    margin-top: -9px;
+    margin-left: -184px;
+    width: 160px;
+    height: 3px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #b5b5b5);
+    animation: float2 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); } 
+}
+
+@keyframes float2 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(3px, 5px); }
+    100%   { transform: translate(0, -0px); } 
 }
 
 @keyframes iconHoverAnimation {
@@ -129,5 +197,27 @@ a {
 
     50% {
         background-position: 100% 0;
+    }
+}
+
+/* viewports */
+@media screen and (max-width: 1260px) {
+    .fubarCon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .infoCon {
+        display: block;
+    }
+
+    .titleCon {
+        margin-top: 400px;
+    }
+
+    .pfpCon {
+        margin: auto;
+        margin-top: -330px;
     }
 }
