@@ -1,6 +1,4 @@
 
-const log = console.log.bind(console);
-
 // Lower fall rate = faster fall speed
 let snow_fall_rate = 5,
     snow_amount_per_tick = 150;

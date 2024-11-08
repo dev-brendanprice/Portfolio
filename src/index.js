@@ -1,9 +1,4 @@
-import { configureEvents } from './utils/events.js';
 import { configureTheme } from './utils/configureTheme.js';
-
-const log = console.log.bind(console);
-
-export var snowOpacity;
 
 // Main entry point
 function Main() {
@@ -15,7 +10,6 @@ function Main() {
         configureTheme('Winter');
     };
 
-    configureEvents();
     configureTheme();
 };
 

@@ -1,6 +1,6 @@
 # My Portfolio Website.
 
-Minimalistic design used to show my skills, projects, and qualities.
+Minimalistic design used to present all my projects, and relative links.
 
 # Clone Me!
 

@@ -100,6 +100,29 @@ a {
     animation: iconHoverAnimation 3s ease-in-out infinite;
 }
 
+.conLoadCV {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#btnLoadCV {
+    border-radius: 5px;
+    background-color: rgb(43, 43, 99);
+    color: white;
+    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid rgb(74, 74, 140);
+    cursor: pointer;
+    width: fit-content;
+    font-size: 14px;
+}
+
+#btnLoadCV:hover {
+    background-color: rgb(55, 55, 121);
+}
+
 .fubarCon {
     position: absolute;
     right: 0;

@@ -1,7 +1,5 @@
 import { Snow } from './snowflakes.js';
 
-const log = console.log.bind(console);
-
 export function configureTheme(themeType = 'Default') {
 
     // Check if theme selection is for winter
