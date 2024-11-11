@@ -6,7 +6,7 @@ function Main() {
     // Check the date and apply a theme based on the date (indexes at 0)
     // 11 = Winter (December), null = Default
     let dateMonthIndex = new Date().getMonth();
-    if (dateMonthIndex === 11) {
+    if (dateMonthIndex === 10) {
         configureTheme('Winter');
     };
 
