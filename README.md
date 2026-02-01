@@ -1,13 +1,21 @@
-# My Portfolio Website.
+# bun-react-template
 
-Work in Progress
+To install dependencies:
 
-# Clone Me!
+```bash
+bun install
+```
 
-1. Clone this repo
-2. CD into it and run `npm i`
+To start a development server:
 
-To run the development environment: `npm run dev`<br>
-To build the solution: `npm run build`*
+```bash
+bun dev
+```
 
-*[Read Here](https://www.snowpack.dev/guides/optimize-and-bundle) to understand what bundling means.
+To run for production:
+
+```bash
+bun start
+```
+
+This project was created using `bun init` in bun v1.3.8. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
