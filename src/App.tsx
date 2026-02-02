@@ -1,10 +1,12 @@
 import "./index.css";
+import { Profile } from "./components/profile";
+import { Projects } from "./components/projects";
 
 export function App() {
   return (
     <div className="app">
-      <div>profile</div>
-      <div>projects</div>
+      <Profile />
+      <Projects />
     </div>
   );
 }
