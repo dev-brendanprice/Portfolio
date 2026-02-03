@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "bun-react-template",
+      "name": "portfolio-v2",
       "dependencies": {
         "react": "^19",
         "react-dom": "^19",
