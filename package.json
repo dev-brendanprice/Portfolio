@@ -9,6 +9,8 @@
     "start": "NODE_ENV=production bun src/index.ts"
   },
   "dependencies": {
+    "@types/file-saver": "^2.0.7",
+    "file-saver": "^2.0.5",
     "react": "^19",
     "react-dom": "^19"
   },
